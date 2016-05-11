@@ -1,0 +1,63 @@
+.leaf-tour {
+    position: absolute;
+    margin-left: 16px;
+}
+.leaf-tour-mask {
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 9999;
+}
+.leaf-tour-mask-top {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.leaf-tour-mask-right {
+    right: 0;
+}
+.leaf-tour-mask-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.leaf-tour-mask-left {
+    left: 0;
+}
+.leaf-tour-step-inner {
+    position: relative;
+    z-index: 10000;
+    background-color: #f3f3f3;
+    &:before {
+        content: "";
+        border: 16px solid #f3f3f3;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: -32px;
+        position: absolute;
+    }
+}
+.leaf-tour-position-left {
+    margin-left: -16px;
+    .leaf-tour-step-inner:before {
+        left: auto;
+        right: -32px;
+        border-left-color: #f3f3f3;
+    }
+}
+.leaf-tour-nav {
+    display: flex;
+    background-color: #f3f3f3;
+    position: relative;
+    z-index: 10000;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.leaf-tour-nav-prev, .leaf-tour-nav-next {
+    flex: 1;
+    text-align: center;
+}
