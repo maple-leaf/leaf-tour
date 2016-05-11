@@ -1,6 +1,6 @@
 {
   "name": "leaf-tour",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A web tour implemented with angular directive",
   "main": "leaf-tour.js",
   "scripts": {
