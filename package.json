@@ -7,9 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "web",
-    "tour"
+    "tour",
+    "angular"
   ],
   "author": "maple-leaf",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maple-leaf/leaf-tour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maple-leaf/leaf-tour/issues"
+  },
+  "homepage": "https://github.com/maple-leaf/leaf-tour#readme"
 }
