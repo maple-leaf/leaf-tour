@@ -40,7 +40,7 @@
     })();
 
     angular.module('leafui.tour', [])
-    .directive('leafTour', function($compile) {
+    .directive('leafTour', ['$compile', function($compile) {
         return {
             controller: function() {
                 var ctrl = this;
@@ -132,8 +132,8 @@
                 });
             }
         };
-    })
-    .directive('leafTourStep', function($document, $timeout, $parse) {
+    }])
+    .directive('leafTourStep', ['$document', '$timeout', '$parse', function($document, $timeout, $parse) {
         return {
             controller: function() {
                 var ctrl = this;
@@ -221,6 +221,6 @@
                 });
             }
         };
-    });
+    }]);
 
 })(window, angular);
