@@ -81,6 +81,7 @@
                     '<div class="leaf-tour-mask leaf-tour-mask-right"></div>',
                     '<div class="leaf-tour-mask leaf-tour-mask-bottom"></div>',
                     '<div class="leaf-tour-mask leaf-tour-mask-left"></div>',
+                    '<div class="leaf-tour-mask leaf-tour-mask-target"></div>',
                     '</div>'
                 ].join('');
                 leafTourCtrl.mask = angular.element(maskHtml)
@@ -88,6 +89,7 @@
                 leafTourCtrl.maskRight =  leafTourCtrl.mask[0].querySelector('.leaf-tour-mask-right');
                 leafTourCtrl.maskBottom = leafTourCtrl.mask[0].querySelector('.leaf-tour-mask-bottom');
                 leafTourCtrl.maskLeft = leafTourCtrl.mask[0].querySelector('.leaf-tour-mask-left');
+                leafTourCtrl.maskTarget = leafTourCtrl.mask[0].querySelector('.leaf-tour-mask-target');
                 ele.append(leafTourCtrl.mask);
 
                 var btnConfig = {};
@@ -196,6 +198,10 @@
                             leafTourCtrl.maskLeft.style.width = targetRect.left + 'px';
                             leafTourCtrl.maskLeft.style.height = targetRect.height + 'px';
                             leafTourCtrl.maskLeft.style.top = targetRect.top + 'px';
+                            leafTourCtrl.maskTarget.style.width = targetRect.width + 'px';
+                            leafTourCtrl.maskTarget.style.height = targetRect.height + 'px';
+                            leafTourCtrl.maskTarget.style.top = targetRect.top + 'px';
+                            leafTourCtrl.maskTarget.style.left = targetRect.left + 'px';
                         });
                     });
                 }
