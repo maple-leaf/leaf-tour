@@ -1,5 +1,8 @@
 ## A web tour implemented with angular directive
 
+### screenshot
+![alt screenshot](https://raw.githubusercontent.com/maple-leaf/leaf-tour/master/screenshot.jpg)
+
 ### example:
 
     <div leaf-tour leaf-tour-current="1" leaf-tour-btn-next='{"class": "ui-btn ui-btn-primary", "text": "下一步"}' leaf-tour-btn-done='{"class": "ui-btn ui-btn-primary", "text": "完成"}' class="tour-guide" ng-if="editor.firstVisit">
